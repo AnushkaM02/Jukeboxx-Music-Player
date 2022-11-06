@@ -263,7 +263,6 @@ public class Login extends javax.swing.JFrame {
             String password = passwordinput.getText();
             String passgot = null;
             try {
-
                 con = DriverManager.getConnection("jdbc:mysql://localhost:3306/music?user=root&password=Red@1989");
                 ps = con.prepareStatement("select Password from user where Username = ?"); 
                 ps.setString(1, username);
